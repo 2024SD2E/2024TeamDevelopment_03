@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <title>商品情報更新</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>商品情報更新</h1>
+        <form action="g6.php" method="post">
+            <!-- 現在の商品名（更新対象の指定） -->
+            <label for="current_name">現在の商品名</label><br>
+            <input type="text" id="current_name" name="current_name" placeholder="現在の商品名を入力" required><br><br>
+
+            <!-- 新しい商品名 -->
+            <label for="new_name">新しい商品名</label><br>
+            <input type="text" id="new_name" name="new_name" placeholder="新しい商品名を入力"><br><br>
+
+            <!-- その他の更新項目 -->
+            <label for="details">詳細</label><br>
+            <input type="text" id="details" name="details" placeholder="新しい詳細情報を入力"><br><br>
+
+            <label for="price">価格</label><br>
+            <input type="number" id="price" name="price" placeholder="新しい価格を入力"><br><br>
+
+            <label for="quantity">数量</label><br>
+            <input type="number" id="quantity" name="quantity" placeholder="新しい数量を入力"><br><br>
+
+            <label for="image">画像</label>
+            <input type="file" id="image" name="image" accept="image/*"><br><br>
+
+            <button type="submit">更新</button>
+        </form>
+        <a href="../G4/g4.html" class="back">＜戻る</a>
+    </div>
+</body>
+</html>

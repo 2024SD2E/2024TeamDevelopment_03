@@ -1,0 +1,65 @@
+/* 全体のコンテナを縦短くし、画面にフィットさせる */
+.container {
+  width: 300px;
+  margin: 0 auto;
+  min-height: 80vh; /* ビューポートの高さの80%に変更 */
+  border: 1px solid #ccc;
+  background-color: #e0e0e0;
+  font-family: Arial, sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start; /* 上に要素を寄せる */
+  position: relative; /* 戻るリンクの位置を相対的に指定 */
+}
+
+/* ヘッダーのスタイル */
+.header {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 20px 0;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+/* メニュー項目（リンク）のスタイル */
+.menu-item {
+  display: block;
+  padding: 15px;
+  text-align: center;
+  font-size: 16px;
+  color: black;
+  background-color: white; /* 背景色 */
+  border: none;
+  border-radius: 5px;
+  text-decoration: none;
+  margin: 10px 0; /* 上下に余白 */
+}
+
+/* メニュー項目（リンク）のホバー時のスタイル */
+.menu-item:hover {
+  background-color: #555; /* ホバー時に背景色が少し明るくなる */
+}
+
+/* 最後の項目のボーダーを削除 */
+.menu-item:last-child {
+  margin-bottom: 20px; /* 最後の項目には余白を少し増やす */
+}
+
+/* 戻るリンクのスタイル */
+.back-link {
+  position: absolute; /* 絶対位置で配置 */
+  bottom: 10px; /* 親要素内の下端から10px */
+  left: 10px; /* 親要素内の左端から10px */
+  padding: 15px;
+}
+
+.back-link a {
+  color: #333;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.back-link a:hover {
+  text-decoration: underline;
+}

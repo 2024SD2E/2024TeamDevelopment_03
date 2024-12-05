@@ -1,0 +1,92 @@
+/* 全体のスタイル */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f0f0f0;
+    font-family: Arial, sans-serif;
+  }
+  
+  /* コンテナのスタイル */
+  .container {
+    width: 90%;
+    max-width: 400px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* 見出しのスタイル */
+  h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+    font-size: 1.5em;
+  }
+  
+  /* 入力グループのスタイル */
+  .input-group {
+    margin-bottom: 15px;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #555;
+    font-size: 0.9em;
+  }
+  
+  input,
+  select {
+    width: 100%;
+    padding: 10px;
+    border-radius: 20px;
+    border: 1px solid #ccc;
+    font-size: 1em;
+    outline: none;
+  }
+  
+  /* ボタンのスタイル */
+  button {
+    width: 100%;
+    padding: 10px;
+    background-color: #a5e4c2;
+    border: none;
+    border-radius: 20px;
+    color: #fff;
+    font-weight: bold;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  button:hover {
+    background-color: #82c7a1;
+  }
+  
+  /* スマホサイズに対応するメディアクエリ */
+  @media screen and (max-width: 480px) {
+    h1 {
+        font-size: 1.2em;
+    }
+  
+    input,
+    select,
+    button {
+        font-size: 0.9em;
+    }
+  
+    .container {
+        padding: 15px;
+    }
+  }
+  

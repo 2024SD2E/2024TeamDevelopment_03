@@ -1,0 +1,82 @@
+/* body全体を画面中央に配置 */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: Arial, sans-serif;
+  }
+  
+  /* コンテナ全体のスタイル */
+  .container {
+    text-align: center;
+    border: 1px solid #ccc;
+    padding: 20px;
+    width: 250px;
+    box-sizing: border-box;
+  }
+  
+  /* タイトルのスタイル */
+  h1 {
+    font-size: 20px;
+    margin-bottom: 20px;
+  }
+  
+  /* フォーム要素のスタイル */
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  label {
+    font-size: 14px;
+    text-align: left;
+    visibility: hidden; /* ラベルを非表示にして、入力フィールドを中央に配置 */
+  }
+  
+  input[type="text"] {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    background-color: #f0f0f0;
+  }
+  
+  /* 削除ボタンのスタイル */
+  .delete-button {
+    width: 60px;
+    padding: 8px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 14px;
+    cursor: pointer;
+    align-self: center;
+  }
+
+/* PC用スタイル */
+@media (min-width: 1024px) {
+  .container {
+    border: none; /* 外枠の線を消す */
+    /* その他の必要なスタイルはそのまま */
+    width: 100%; /* PC画面で横幅を広げたい場合 */
+    max-width: 600px; /* スマホ画面用の最大幅を設定 */
+    margin: 0 auto; /* 中央揃え */
+    padding: 20px; /* 必要に応じて内側の余白を調整 */
+    box-shadow: none; /* 影も取り除きたい場合 */
+  }
+
+  h1 {
+      font-size: 2em;
+  }
+
+  .btn {
+      padding: 15px;
+      font-size: 1.2em;
+  }
+}
+

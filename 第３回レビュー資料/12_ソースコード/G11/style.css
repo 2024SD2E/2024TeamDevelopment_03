@@ -1,0 +1,96 @@
+/* 基本のレイアウト */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #f4f4f4;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* 商品詳細のスタイル */
+.product-image {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+.product-name {
+    font-size: 2rem;
+    font-weight: 700;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.product-price {
+    font-size: 1.5rem;
+    color: #FF6F61;
+    text-align: center;
+    margin: 20px 0;
+}
+
+.product-details {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    margin-bottom: 30px;
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.purchase-button, .cart-button {
+    padding: 12px 25px;
+    font-size: 1.1rem;
+    background-color: #FF6F61;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.purchase-button:hover, .cart-button:hover {
+    background-color: #e04e42;
+}
+
+/* メディアクエリ: PCサイズ */
+@media screen and (min-width: 1024px) {
+    body {
+        font-size: 18px; /* PCでのフォントサイズ */
+    }
+
+    .product-name {
+        font-size: 2.5rem;
+    }
+
+    .product-price {
+        font-size: 1.8rem;
+    }
+
+    .product-details {
+        font-size: 1.3rem;
+    }
+
+    .buttons {
+        gap: 20px;
+    }
+}
+
+/* 小さな画面用のレスポンシブ対応 */
+@media screen and (max-width: 1023px) {
+    body {
+        font-size: 16px; /* タブレットやモバイル用のフォントサイズ */
+    }
+
+    .container {
+        padding: 15px;
+    }
+}

@@ -1,0 +1,135 @@
+/* 既存のスタイルはそのままで、追加または修正部分を記述 */
+.container {
+    width: 80%;
+    max-width: 600px; /* 画面幅に合わせて最大幅を調整 */
+    padding: 10px;
+    background-color: #fff;
+    margin: 0 auto; /* コンテナを中央に配置 */
+    position: relative;
+    top: 10%; 
+    overflow: hidden; /* 子要素がはみ出さないように調整 */
+}
+
+h1 {
+    font-size: 24px;
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.search-bar {
+    width: 100%;
+    padding: 20px; /* 少し余白を増やしてバランスを調整 */
+    font-size: 18px;
+    color: #888;
+    text-align: center;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    margin-bottom: 15px;
+}
+
+.purchase-button {
+    width: 100%;
+    padding: 20px;
+    font-size: 18px;
+    background-color: #FF7F00;
+    color: #fff;
+    text-align: center;
+    margin: 15px 0;
+    cursor: pointer;
+    border-radius: 5px;
+    border: none;
+}
+
+.item {
+    display: flex;
+    align-items: center;
+    margin: 20px 0; /* 上下の余白を調整 */
+    padding-bottom: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+.item img {
+    width: 100px;
+    height: auto;
+    margin-right: 15px;
+    border-radius: 5px;
+}
+
+.item-info {
+    flex: 1;
+    font-size: 18px;
+}
+
+.quantity-control {
+    display: flex;
+    align-items: center;
+    margin-top: 5px;
+}
+
+.quantity-button {
+    background-color: #f44336; /* 赤色 */
+    color: white; /* 文字色 */
+    border: none; /* ボーダーなし */
+    border-radius: 5px; /* 角を丸く */
+    padding: 5px 10px; /* パディングで大きさ調整 */
+    cursor: pointer; /* ホバー時にポインタを表示 */
+    font-size: 14px; /* フォントサイズ */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* ボックスシャドウ */
+    transition: background-color 0.3s ease, box-shadow 0.3s ease; /* アニメーション */
+}
+
+.quantity-button:hover {
+    background-color: #d32f2f; /* ホバー時の色 */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* ホバー時の影 */
+}
+
+.quantity-display {
+    width: 30px;
+    text-align: center;
+    font-size: 18px;
+    margin: 0 5px;
+}
+
+.price {
+    font-size: 18px;
+    color: #333;
+    margin-top: 5px;
+}
+
+#total-price {
+    text-align: right;
+    font-size: 20px;
+    padding: 15px 0;
+    font-weight: bold;
+}
+
+.footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #fff; /* 背景色 */
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px 0;
+    border-top: 1px solid #ddd; /* 上部の区切り線 */
+}
+
+.footer-icon {
+    text-align: center;
+    font-size: 12px;
+    color: #333;
+    text-decoration: none;
+}
+
+.footer-icon img {
+    width: 24px;
+    height: 24px;
+}
+
+.footer-icon span {
+    margin-top: 5px;
+    font-size: 12px;
+}

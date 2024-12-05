@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ユーザー登録</title>
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="reset.css">
+</head>
+<body>
+
+<div class="container">
+    <h1>ログイン</h1><br><br><br>
+    <form action="login.php" method="POST">
+        <div class="input-group">
+            <label for="email">メールアドレス</label><br>
+            <input type="email" id="email" name="email" placeholder="メールアドレス" required><br><br>
+        </div>
+        <div class="input-group">
+            <label for="password">パスワード</label><br>
+            <input type="password" id="password" name="password" placeholder="パスワード" required><br><br>
+        </div>
+        <br><br><br><br><br>
+
+        <button type="submit" name="action" value="send">ログイン</button>
+    </form>
+</div>
+
+</body>
+</html>

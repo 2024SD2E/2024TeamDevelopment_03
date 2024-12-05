@@ -1,0 +1,168 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+ 
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+}
+ 
+/* コンテナ（PC幅対応） */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+ 
+/* ヘッダー */
+header {
+    padding: 10px 20px;
+    border-bottom: 1px solid #ccc;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+ 
+/* ロゴ */
+.logo {
+    display: flex;
+    align-items: center;
+}
+ 
+.logo img {
+    width: 80px; /* ロゴ画像拡大 */
+    height: auto;
+}
+ 
+.logo-text {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 36px; /* ロゴ文字拡大 */
+    margin-left: 10px;
+}
+ 
+/* 検索バー */
+.search-bar {
+    flex-grow: 1; /* 幅を自動調整 */
+    display: flex;
+    justify-content: center;
+}
+ 
+.search-bar input {
+    width: 300px;
+    padding: 8px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+ 
+/* ジャンル選択 */
+.category {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+ 
+.category label {
+    font-size: 14px;
+}
+ 
+.category select {
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+}
+ 
+/* メインコンテンツ */
+main {
+    flex-grow: 1;
+    padding: 20px;
+    overflow-y: auto;
+}
+ 
+/* 商品グリッド */
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr); /* 5列表示 */
+    gap: 20px;
+}
+ 
+.product {
+    text-align: center;
+    border: 1px solid #ccc;
+    padding: 10px;
+    background-color: #fff;
+    border-radius: 8px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+ 
+.product:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+ 
+.product img {
+    width: 100%;
+    height: auto;
+    max-width: 150px;
+    margin-bottom: 10px;
+}
+ 
+.product p {
+    font-size: 14px;
+    margin-top: 5px;
+}
+/* フッター全体 */
+/* フッターデザイン */
+/* フッター */
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #fff;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px 0;
+    border-top: 1px solid #ddd;
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.footer-icon {
+    text-align: center;
+    font-size: 14px;
+    color: #333;
+    text-decoration: none;
+}
+
+.footer-icon img {
+    width: 32px; /* アイコンサイズを調整 */
+    height: 32px;
+    margin-bottom: 5px;
+}
+
+.footer-icon a {
+    color: #333;
+    text-decoration: none;
+    transition: transform 0.3s;
+}
+
+.footer-icon a:hover {
+    transform: scale(1.1); /* ホバー時の拡大アニメーション */
+}
+
+
+/* フッター */
+@media screen and (max-width: 768px) {
+    footer {
+      height: 50px; /* モバイルではさらに高さを縮小 */
+    }
+    .footer-icon {
+      font-size: 10px; /* テキストサイズを縮小 */
+    }
+  }

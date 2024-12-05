@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ユーザー登録</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>ユーザー登録</h1>
+        <form action="g2.php" method="post">
+            <label for="mail">メールアドレス</label><br>
+            <input type="email" id="mail" name="mail" required><br>
+
+            <label for="password">パスワード</label><br>
+            <input type="password" id="password" name="password" required><br>
+
+            <label for="name">名前</label><br>
+            <input type="name" id="name" name="name" required><br>
+
+            <label for="zyusyo">住所</label><br>
+            <input type="text" id="zyusyo" name="zyusyo" required><br>
+
+            <label for="payment">お支払い方法</label><br>
+            <select id="payment" name="payment">
+                <option value="キャリア決済">キャリア決済</option>
+                <option value="コンビニ決済">コンビニ決済</option>
+                <option value="クレジット決済">クレジット決済</option>
+            </select><br><br>
+
+            <button type="submit">ユーザー登録完了</button>
+        </form>
+    </div>
+</body>
+</html>
+

@@ -1,0 +1,48 @@
+
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>商品登録</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+  <h1>商品登録</h1>
+  
+  
+  <form action="g5.php" method="post">
+
+
+    <label for="product_name">商品名</label>
+    <input type="text" id="product_name" name="product_name">
+
+    <label for="price">金額</label>
+    <input type="text" id="price" name="price">
+
+    <label for="quantity">商品数</label>
+    <input type="number" id="quantity" name="quantity">
+
+    <label for="shosai">詳細</label>
+    <textarea id="shosai" name="shosai"></textarea>
+
+    <label for="junle">種類</label>
+    <select id="junle_name" name="junle_name">
+      <option value="WHEY">WHEY</option>
+      <option value="SOY">SOY</option>
+      <option value="CASEIN">CASEIN</option>
+  </select>
+
+    <label for="image">画像</label>
+    <input type="file" id="image" name="image" accept="image/*">
+
+    <button type="submit" class="submit-button">登録</button>
+  </form>
+  <br>
+  <a href="../G4/g4.html" class="back">＜戻る</a>
+</div>
+
+</body>
+</html>

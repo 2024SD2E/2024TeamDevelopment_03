@@ -1,0 +1,97 @@
+/* ベーススタイル */
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  font-family: Arial, sans-serif;
+ /* background-color: #f5f5f5;*/
+}
+
+/* コンテナの基本スタイル */
+.container {
+  background-color: #fff;
+  border: 1px solid #ccc;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+/* タイトル */
+h1 {
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+/* フォームの基本スタイル */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+label {
+  font-size: 14px;
+  text-align: left;
+}
+
+input[type="text"],
+input[type="number"],
+textarea {
+  width: 100%;
+  padding: 8px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  background-color: #fafafa;
+}
+
+textarea {
+  resize: vertical;
+  height: 60px;
+}
+
+input[type="file"] {
+  margin-top: 5px;
+}
+
+/* 登録ボタン */
+.submit-button {
+  padding: 10px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.submit-button:hover {
+  background-color: #0056b3;
+}
+
+/* PC用スタイル */
+@media (min-width: 1024px) {
+  .container {
+    border: none; /* 外枠の線を消す */
+    /* その他の必要なスタイルはそのまま */
+    width: 100%; /* PC画面で横幅を広げたい場合 */
+    max-width: 600px; /* スマホ画面用の最大幅を設定 */
+    margin: 0 auto; /* 中央揃え */
+    padding: 20px; /* 必要に応じて内側の余白を調整 */
+    box-shadow: none; /* 影も取り除きたい場合 */
+  }
+
+  h1 {
+      font-size: 2em;
+  }
+
+  .btn {
+      padding: 15px;
+      font-size: 1.2em;
+  }
+}
